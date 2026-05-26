@@ -21,7 +21,7 @@ jobs:
 
       - name: Sincronizar archivos con S3
         run: |
-          aws s3 sync . s3://${{ vars.AWS_S3_BUCKET }} \
+          aws s3 sync . s3://bucket-falso-prueba-xyz-123456 \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
